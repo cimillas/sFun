@@ -1,0 +1,243 @@
+<resources>
+
+     Base application theme. -->
+    <!--
+            <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <!- Customize your theme here. -->
+    <!--
+       <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+            <item name="android:textViewStyle">@style/CustomTextStyle</item>
+            <item name= "android:buttonStyle">@style/CustomButtonStyle</item>
+
+    </style>-->
+
+    <!--Sizes for ButtonsView-->
+    <style name="ColorButton">
+        <item name = "android:layout_width">fill_parent</item>
+        <item name = "android:layout_height">fill_parent</item>
+        <item name = "android:layout_weight">1</item>
+        <item name = "android:clickable">true</item>
+        <item name = "android:enabled">true</item>
+        <item name = "android:textStyle">bold</item>
+        <item name = "android:textColor">#ffffff</item>
+        <item name = "android:layout_margin">2dp</item>
+        </style>
+    <style name="ColorButton.default_size">
+        <item name = "android:textSize">@dimen/default_colorButton_text_size</item>
+    </style>
+    <style name="ColorButton.small_size">
+        <item name="android:textSize">@dimen/small_colorButton_text_size</item>
+    </style>
+    <style name="ColorButton.large_size">
+        <item name="android:textSize">@dimen/large_colorButton_text_size</item>
+    </style>
+
+
+
+    <!--Color Modes for ColorButtons-->
+
+    <!--ColorButton1-->
+    <style name="ColorButton.colorButton1">
+        <item name="android:text">1</item>
+    </style>
+        <!--Small size-->
+        <style name="ColorButton.colorButton1.smallNcolorButton1" parent="ColorButton.small_size">
+            <item name="android:background">@color/NcolorButton1</item>
+        </style>
+        <style name="ColorButton.colorButton1.smallPcolorButton1" parent="ColorButton.small_size">
+            <item name="android:background">@color/PcolorButton1</item>
+        </style>
+        <!--Default size-->
+        <style name="ColorButton.colorButton1.defaultNcolorButton1" parent="ColorButton.default_size">
+            <item name="android:background">@color/NcolorButton1</item>
+        </style>
+        <style name="ColorButton.colorButton1.defaultPcolorButton1" parent="ColorButton.default_size">
+            <item name="android:background">@color/PcolorButton1</item>
+        </style>
+
+
+    <style name="ColorButton.colorButton2">
+        <item name="android:text">2</item>
+    </style>
+    <style name="ColorButton.colorButton3">
+        <item name="android:text">3</item>
+    </style>
+    <style name="ColorButton.colorButton4">
+        <item name="android:text">4</item>
+    </style>
+    <style name="ColorButton.colorButton5">
+        <item name="android:text">5</item>
+    </style>
+    <style name="ColorButton.colorButton6">
+        <item name="android:text">6</item>
+    </style>
+    <style name="ColorButton.colorButton7">
+        <item name="android:text">7</item>
+    </style>
+    <style name="ColorButton.colorButton8">
+        <item name="android:text">8</item>
+    </style>
+    <style name="ColorButton.colorButton9">
+        <item name="android:text">9</item>
+    </style>
+    <!-- Normal Mode -->
+
+    <style name="ColorButton.NcolorButton2">
+        <item name="android:background">@color/NcolorButton2</item>
+    </style>
+    <style name="ColorButton.NcolorButton3">
+        <item name="android:background">@color/NcolorButton3</item>
+    </style>
+    <style name="ColorButton.NcolorButton4">
+        <item name="android:background">@color/NcolorButton4</item>
+    </style>
+    <style name="ColorButton.NcolorButton5">
+        <item name="android:background">@color/NcolorButton5</item>
+    </style>
+    <style name="ColorButton.NcolorButton6">
+        <item name="android:background">@color/NcolorButton6</item>
+    </style>
+    <style name="ColorButton.NcolorButton7">
+        <item name="android:background">@color/NcolorButton7</item>
+    </style>
+    <style name="ColorButton.NcolorButton8">
+        <item name="android:background">@color/NcolorButton8</item>
+    </style>
+    <style name="ColorButton.NcolorButton9">
+        <item name="android:background">@color/NcolorButton9</item>
+    </style>
+
+    <!--Protanopia -->
+
+    <style name="ColorButton.PcolorButton2">
+        <item name="android:background">@color/PcolorButton2</item>
+    </style>
+    <style name="ColorButton.PcolorButton3">
+        <item name="android:background">@color/PcolorButton3</item>
+    </style>
+    <style name="ColorButton.PcolorButton4">
+        <item name="android:background">@color/PcolorButton4</item>
+    </style>
+    <style name="ColorButton.PcolorButton5">
+        <item name="android:background">@color/PcolorButton5</item>
+    </style>
+    <style name="ColorButton.PcolorButton6">
+        <item name="android:background">@color/PcolorButton6</item>
+    </style>
+    <style name="ColorButton.PcolorButton7">
+        <item name="android:background">@color/PcolorButton7</item>
+    </style>
+    <style name="ColorButton.PcolorButton8">
+        <item name="android:background">@color/PcolorButton8</item>
+    </style>
+    <style name="ColorButton.PcolorButton9">
+        <item name="android:background">@color/PcolorButton9</item>
+    </style>
+
+
+
+
+    <!--Text sizes -->
+    <style name ="text_style">
+
+    </style>
+
+    <!--Normal Colors-->
+        <!--SMALL SIZE-->
+    <style name="small_style">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+        <style name="small_title_text" parent="small_style">
+            <item name="android:textColor">@color/titleTextColor_Normal</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+        <style name="small_body_text" parent="small_style">
+            <item name="android:textColor">@color/normalTextColor_Normal</item>
+        </style>
+        <style name="small_button_text" parent="small_style">
+            <item name="android:textColor">@color/normalButtonTextColor</item>
+        </style>
+        <style name="small_radio_btn_text" parent ="small_style">
+            <item name="android:textColor">@color/radioButtonColor</item>
+        </style>
+        <style name="small_check_btn_text" parent="small_style">
+            <item name="android:textColor">@color/checkButtonColor</item>
+        </style>
+
+        <!--LARGE SIZE-->
+    <style name="large_style">
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+        <style name="large_title_text" parent="large_style">
+            <item name="android:textColor">@color/titleTextColor_Normal</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+    
+        <style name="large_body_text" parent="large_style">
+            <item name="android:textColor">@color/normalTextColor_Normal</item>
+        </style>
+    
+        <style name="large_button_text" parent="large_style">
+            <item name="android:textColor">@color/normalButtonTextColor</item>
+        </style>
+        <style name="large_radio_btn_text" parent="large_style">
+            <item name="android:textColor">@color/radioButtonColor</item>
+        </style>
+
+        <style name="large_check_btn_text" parent="large_style">
+            <item name="android:textColor">@color/checkButtonColor</item>
+        </style>
+
+
+    <!--DEFAULT SIZE-->
+    <style name="default_style">
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+        <style name="default_title_text" parent="default_style">
+            <item name="android:textColor">@color/titleTextColor_Normal</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="default_body_text" parent="default_style">
+            <item name
+                ="android:textColor">@color/normalTextColor_Normal</item>
+        </style>
+        <style name="default_button_text" parent="default_style">
+        <item name="android:textColor">@color/normalButtonTextColor</item>
+        </style>
+
+        <style name="default_radio_btn_text" parent="default_style">
+            <item name="android:textColor">@color/radioButtonColor</item>
+        </style>
+
+        <style name="default_check_btn_text" parent="default_style">
+            <item name="android:textColor">@color/checkButtonColor</item>
+        </style>
+
+
+        <style name="default_theme">
+            <item name="android:background">@color/gameBackground</item>
+            <item  name="android:padding">2dp</item>
+        </style>
+
+
+        <!-- Change default theme -->
+
+        <style name="background_default">
+            <item name="android:background">@color/gameBackground</item>
+            <item  name="android:padding">2dp</item>
+        </style>
+
+
+
+
+</resources>

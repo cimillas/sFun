@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- View styles -->
+    <attr name="textTitle" format="reference" />
+    <attr name="textBody" format="reference" />
+    <attr name="buttonText" format="reference"/>
+    <attr name="radioButtonText" format="reference"/>
+    <attr name="checkBoxText" format="reference"/>
+    <attr name="backgroundTheme" format="reference"/>
+    <attr name="ColorButtonTextSize" format="reference"/>
+
+    <attr name="textTitleColor" format="color"/>
+    <attr name="textBodyColor" format="color"/>
+
+    <attr name="ColorButton1ColorStyle" format="reference"/>
+    <attr name="ColorButton2ColorStyle" format="reference"/>
+    <attr name="ColorButton3ColorStyle" format="reference"/>
+    <attr name="ColorButton4ColorStyle" format="reference"/>
+    <attr name="ColorButton5ColorStyle" format="reference"/>
+    <attr name="ColorButton6ColorStyle" format="reference"/>
+    <attr name="ColorButton7ColorStyle" format="reference"/>
+    <attr name="ColorButton8ColorStyle" format="reference"/>
+    <attr name="ColorButton9ColorStyle" format="reference"/>
+
+</resources>

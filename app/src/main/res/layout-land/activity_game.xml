@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myattr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.hpi.labordacimas.simplefun2.Game"
+    android:stretchColumns="0,1,2"
+    android:background="?backgroundTheme">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/score_row"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal">
+
+        <Chronometer
+            style="?attr/textTitle"
+            android:textColor="?attr/textTitleColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score_chronometer"
+            android:layout_column="0"
+            android:width="0px"
+            android:layout_weight="0.33"
+            android:textStyle="bold"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:gravity="center" />
+
+        <TextView
+            style="?attr/textTitle"
+            android:textColor="?attr/textTitleColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/level"
+            android:id="@+id/score_textview"
+            android:layout_column="2"
+            android:width="0px"
+            android:layout_weight="0.33"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Table_Row1"
+        android:layout_weight="20"
+        android:layout_gravity="center_horizontal">
+
+        <com.hpi.labordacimas.simplefun2.gamepack.game.ColorButton
+            style="?attr/ColorButtonTextSize"
+            android:background="?attr/ColorButton1ColorStyle"
+            android:id="@+id/game_button1"
+            android:layout_column="0"
+            android:width="0px"
+            android:layout_weight="0.33"
+            android:text="1" />
+
+        <com.hpi.labordacimas.simplefun2.gamepack.game.ColorButton
+            style="?attr/ColorButtonTextSize"
+            android:text="2"
+            android:id="@+id/game_button2"
+            android:background="?attr/ColorButton2ColorStyle"
+            android:layout_column="1"
+            android:width="0px"
+            android:layout_weight="0.33" />
+
+        <com.hpi.labordacimas.simplefun2.gamepack.game.ColorButton
+            style="?attr/ColorButtonTextSize"
+            android:text="3"
+            android:id="@+id/game_button3"
+            android:background="?attr/ColorButton3ColorStyle"
+            android:layout_column="2"
+            android:width="0px"
+            android:layout_weight="0.33"
+            android:layout_width="match_parent" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Table_Row2"
+        android:layout_weight="20"
+        android:layout_gravity="center_horizontal">
+
+        <com.hpi.labordacimas.simplefun2.gamepack.game.ColorButton
+            style="?attr/ColorButtonTextSize"
+            android:text="4"
+            android:id="@+id/game_button4"
+            android:layout_weight="0.33"
+            android:width="0px"
+            android:background="?attr/ColorButton4ColorStyle"
+            android:layout_column="0" />
+
+        <com.hpi.labordacimas.simplefun2.gamepack.game.ColorButton
+            style="?attr/ColorButtonTextSize"
+            android:text="5"
+            android:id="@+id/game_button5"
+            android:layout_weight="0.33"
+            android:width="0px"
+            android:background="?attr/ColorButton5ColorStyle"
+            android:layout_column="1" />
+
+        <com.hpi.labordacimas.simplefun2.gamepack.game.ColorButton
+            style="?attr/ColorButtonTextSize"
+            android:text="6"
+            android:id="@+id/game_button6"
+            android:layout_weight="0.33"
+            android:width="0px"
+            android:background="?attr/ColorButton6ColorStyle"
+            android:layout_column="2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Table_Row3"
+        android:layout_weight="20"
+        android:layout_gravity="center_horizontal">
+
+        <com.hpi.labordacimas.simplefun2.gamepack.game.ColorButton
+            style="?attr/ColorButtonTextSize"
+            android:text="7"
+            android:id="@+id/game_button7"
+            android:width="0px"
+            android:background="?attr/ColorButton7ColorStyle"
+            android:layout_column="0" />
+
+        <com.hpi.labordacimas.simplefun2.gamepack.game.ColorButton
+            style="?attr/ColorButtonTextSize"
+            android:text="8"
+            android:id="@+id/game_button8"
+            android:layout_weight="0.33"
+            android:width="0px"
+            android:background="?attr/ColorButton8ColorStyle"
+            android:layout_column="1" />
+
+        <com.hpi.labordacimas.simplefun2.gamepack.game.ColorButton
+            style="?attr/ColorButtonTextSize"
+            android:text="9"
+            android:id="@+id/game_button9"
+            android:layout_weight="0.33"
+            android:width="0px"
+            android:background="?attr/ColorButton9ColorStyle"
+            android:layout_column="2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sequence"
+        android:layout_weight="0">
+
+        <!--   <TextView
+                style="?attr/textTitle"
+                android:textColor="?attr/textTitleColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SequenceTextView"
+                android:layout_column="0"
+                android:layout_gravity="center" /> -->
+
+        <Button
+            style="?attr/buttonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_button_text"
+            android:id="@+id/hint_button"
+            android:layout_column="2"
+            android:enabled="false"
+            android:layout_span="2" />
+    </TableRow>
+</TableLayout>

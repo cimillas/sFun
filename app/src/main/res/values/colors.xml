@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!-- Colors for normal colorbuttons -->
+    <color name="NcolorButton1">#ff0000</color>
+    <color name="NcolorButton2">#ff8000</color>
+    <color name="NcolorButton3">#ffff00</color>
+    <color name="NcolorButton4">#00ff00</color>
+    <color name="NcolorButton5">#00ff80</color>
+    <color name="NcolorButton6">#00ffff</color>
+    <color name="NcolorButton7">#0000ff</color>
+    <color name="NcolorButton8">#7f00ff</color>
+    <color name="NcolorButton9">#ff00ff</color>
+
+    <color name="gameBackground">#0066FF</color>
+    <color name="normalTextColor_Normal">#ffffff</color>
+    <color name="titleTextColor_Normal">#ff9900</color>
+    <color name="normalButtonTextColor">#ffffff</color>
+    <color name="statusBarColor">#05b3fe</color>
+    <color name="radioButtonColor">#ffffff</color>
+    <color name="checkButtonColor">#ffffff</color>
+
+
+
+
+
+
+    <!-- Colors for Protanopia colorbuttons -->
+    <color name="PcolorButton1">#ff0000</color>
+    <color name="PcolorButton2">#35359a</color>
+    <color name="PcolorButton3">#ff0000</color>
+    <color name="PcolorButton4">#35359a</color>
+    <color name="PcolorButton5">#00ff51</color>
+    <color name="PcolorButton6">#35359a</color>
+    <color name="PcolorButton7">#ff0000</color>
+    <color name="PcolorButton8">#35359a</color>
+    <color name="PcolorButton9">#ff0000</color>
+
+    <color name="pBackground">#6a9ee1</color>
+    <color name="pnormalTextColor">#ffffff</color>
+    <color name="ptitleTextColor">#aaff00</color>
+
+    <color name="PButtonTextColor">#ffffff</color>
+    <color name="pstatusBarColor">#05b3fe</color>
+    <color name="pradioButtonColor">#ffffff</color>
+    <color name="pcheckButtonColor">#ffffff</color>
+
+
+
+
+
+
+    <!-- Colors for Deuteranopia colorbuttons -->
+    <color name="DcolorButton1">#a2a1a3</color>
+    <color name="DcolorButton2">#35359a</color>
+    <color name="DcolorButton3">#a2a1a3</color>
+    <color name="DcolorButton4">#35359a</color>
+    <color name="DcolorButton5">#e2e24a</color>
+    <color name="DcolorButton6">#35359a</color>
+    <color name="DcolorButton7">#a2a1a3</color>
+    <color name="DcolorButton8">#35359a</color>
+    <color name="DcolorButton9">#a2a1a3</color>
+
+
+    <color name="dBackground">#1f2020</color>
+
+    <color name="dnormalTextColor">#ffffff</color>
+    <color name="dtitleTextColor">#aaff00</color>
+
+    <color name="dButtonTextColor">#ffffff</color>
+    <color name="dstatusBarColor">#05b3fe</color>
+    <color name="dradioButtonColor">#ffffff</color>
+    <color name="dcheckButtonColor">#ffffff</color>
+
+
+
+
+
+    <!-- Colors for Tritanopia colorbuttons -->
+    <color name="TcolorButton1">#ff0000</color>
+    <color name="TcolorButton2">#00faea</color>
+    <color name="TcolorButton3">#ff0000</color>
+    <color name="TcolorButton4">#00faea</color>
+    <color name="TcolorButton5">#ff0000</color>
+    <color name="TcolorButton6">#00faea</color>
+    <color name="TcolorButton7">#ff0000</color>
+    <color name="TcolorButton8">#00faea</color>
+    <color name="TcolorButton9">#ff0000</color>
+
+    <color name="tBackground">#bb00ff</color>
+
+    <color name="tnormalTextColor">#ffffff</color>
+    <color name="ttitleTextColor">#1e00ff</color>
+
+    <color name="tButtonTextColor">#ffffff</color>
+    <color name="tstatusBarColor">#05b3fe</color>
+    <color name="tradioButtonColor">#ffffff</color>
+    <color name="tcheckButtonColor">#ffffff</color>
+</resources>

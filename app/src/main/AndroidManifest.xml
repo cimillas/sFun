@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hpi.labordacimas.simplefun2">
+
+    <!-- Permisions we need -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DefaultText">
+        <activity android:name=".mainpack.MainActivity">
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gamepack.game.Game"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".mainpack.StaffActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".mainpack.OptionsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name=".gamepack.highScore.HighScore"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name=".gamepack.highScore.PopupScore"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name=".changeTheme.change_Theme"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name=".mainpack.IdentificationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name=".qrpack.QrReaderActivity" />
+        <activity android:name=".qrpack.QrSelectionActivity" />
+        <activity android:name=".qrpack.QrGeneratorActivity" />
+        <activity android:name=".gamepack.gameMovement.MovementGameActivity"
+            android:screenOrientation = "landscape"
+            />
+        <activity android:name=".gamepack.gameMovement.SecretFun"></activity>
+    </application>
+
+</manifest>

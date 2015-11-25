@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <style name="SmallFontTheme" parent="AppTheme">
+        <item name="android:textViewStyle">@style/CustomTextStyle.SmallSize</item>
+        <item name= "android:buttonStyle">@style/CustomButtonStyle.SmallSize</item>
+
+          </style>
+
+    <style name="BigFontTheme" parent= "AppTheme">
+        <item name="android:textViewStyle">@style/CustomTextStyle.BigSize</item>
+        <item name= "android:buttonStyle">@style/CustomButtonStyle.BigSize</item>
+
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+-->
+    <!-- Base application theme is the default theme. -->
+    <style name="Theme" parent="android:Theme">
+    </style>
+
+    <style name="Theme.SmallText">
+        <item name="textTitle">@style/small_title_text</item>
+        <item name="textBody">@style/small_body_text</item>
+        <item name="buttonText">@style/small_button_text</item>
+        <item name="checkBoxText">@style/small_check_btn_text</item>
+        <item name="radioButtonText">@style/small_radio_btn_text</item>
+        <item name="backgroundTheme">@color/gameBackground</item>
+        <item name="ColorButtonTextSize">@style/ColorButton.small_size</item>
+        <item name="textTitleColor">@color/titleTextColor_Normal</item>
+        <item name="textBodyColor">@color/normalTextColor_Normal</item>
+
+    </style>
+
+    <style name="Theme.LargeText">
+        <item name="textTitle">@style/large_title_text</item>
+        <item name="textBody">@style/large_body_text</item>
+        <item name="buttonText">@style/large_button_text</item>
+        <item name="checkBoxText">@style/large_check_btn_text</item>
+        <item name="radioButtonText">@style/large_radio_btn_text</item>
+        <item name="ColorButtonTextSize">@style/ColorButton.large_size</item>
+        <item name="backgroundTheme">@color/gameBackground</item>
+        <item name="textTitleColor">@color/titleTextColor_Normal</item>
+        <item name="textBodyColor">@color/normalTextColor_Normal</item>
+    </style>
+
+    <style name="Theme.DefaultText">
+        <item name="textTitle">@style/default_title_text</item>
+        <item name="textBody">@style/default_body_text</item>
+        <item name="buttonText">@style/default_button_text</item>
+        <item name="backgroundTheme">@color/gameBackground</item>
+        <item name="radioButtonText">@style/default_radio_btn_text</item>
+        <item name="checkBoxText">@style/default_check_btn_text</item>
+        <item name="ColorButtonTextSize">@style/ColorButton.default_size</item>
+        <item name="textTitleColor">@color/titleTextColor_Normal</item>
+        <item name="textBodyColor">@color/normalTextColor_Normal</item>
+    </style>
+
+<style name="Theme.NColor">
+
+</style>
+
+    <!-- NORMAL COLORS THEMES -->
+    <style name="Theme.DefaultText.NColor">
+        <item name="ColorButton1ColorStyle">@color/NcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/NcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/NcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/NcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/NcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/NcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/NcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/NcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/NcolorButton9</item>
+    </style>
+
+    <style name="Theme.LargeText.NColor">
+        <item name="ColorButton1ColorStyle">@color/NcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/NcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/NcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/NcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/NcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/NcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/NcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/NcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/NcolorButton9</item>
+    </style>
+
+    <style name="Theme.SmallText.NColor">
+        <item name="ColorButton1ColorStyle">@color/NcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/NcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/NcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/NcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/NcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/NcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/NcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/NcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/NcolorButton9</item>
+    </style>
+
+
+
+
+    <!-- COLOR BLINDNESS -->
+    <!-- Deuteranopia COLORS THEMES -->
+    <style name="Theme.DefaultText.DColor">
+        <item name="ColorButton1ColorStyle">@color/DcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/DcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/DcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/DcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/DcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/DcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/DcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/DcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/DcolorButton9</item>
+
+        <item name="backgroundTheme">@color/dBackground</item>
+        <item name="textTitleColor">@color/dtitleTextColor</item>
+        <item name="textBodyColor">@color/dnormalTextColor</item>
+    </style>
+
+    <style name="Theme.LargeText.DColor">
+        <item name="ColorButton1ColorStyle">@color/DcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/DcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/DcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/DcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/DcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/DcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/DcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/DcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/DcolorButton9</item>
+
+        <item name="backgroundTheme">@color/dBackground</item>
+        <item name="textTitleColor">@color/dtitleTextColor</item>
+        <item name="textBodyColor">@color/dnormalTextColor</item>
+    </style>
+
+    <style name="Theme.SmallText.DColor">
+        <item name="ColorButton1ColorStyle">@color/DcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/DcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/DcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/DcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/DcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/DcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/DcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/DcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/DcolorButton9</item>
+
+        <item name="backgroundTheme">@color/dBackground</item>
+        <item name="textTitleColor">@color/dtitleTextColor</item>
+        <item name="textBodyColor">@color/dnormalTextColor</item>
+    </style>
+
+
+
+    <!-- Protanopia COLORS THEMES -->
+    <style name="Theme.DefaultText.PColor">
+        <item name="ColorButton1ColorStyle">@color/PcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/PcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/PcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/PcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/PcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/PcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/PcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/PcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/PcolorButton9</item>
+
+        <item name="backgroundTheme">@color/pBackground</item>
+        <item name="textTitleColor">@color/ptitleTextColor</item>
+        <item name="textBodyColor">@color/pnormalTextColor</item>
+    </style>
+
+    <style name="Theme.LargeText.PColor">
+        <item name="ColorButton1ColorStyle">@color/PcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/PcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/PcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/PcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/PcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/PcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/PcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/PcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/PcolorButton9</item>
+
+        <item name="backgroundTheme">@color/pBackground</item>
+        <item name="textTitleColor">@color/ptitleTextColor</item>
+        <item name="textBodyColor">@color/pnormalTextColor</item>
+    </style>
+
+    <style name="Theme.SmallText.PColor">
+        <item name="ColorButton1ColorStyle">@color/PcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/PcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/PcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/PcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/PcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/PcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/PcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/PcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/PcolorButton9</item>
+
+        <item name="backgroundTheme">@color/pBackground</item>
+        <item name="textTitleColor">@color/ptitleTextColor</item>
+        <item name="textBodyColor">@color/pnormalTextColor</item>
+    </style>
+
+
+
+
+
+    <!-- Tritanomia COLORS THEMES -->
+    <style name="Theme.DefaultText.TColor">
+        <item name="ColorButton1ColorStyle">@color/TcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/TcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/TcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/TcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/TcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/TcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/TcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/TcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/TcolorButton9</item>
+
+        <item name="backgroundTheme">@color/tBackground</item>
+        <item name="textTitleColor">@color/ttitleTextColor</item>
+        <item name="textBodyColor">@color/tnormalTextColor</item>
+    </style>
+
+    <style name="Theme.LargeText.TColor">
+        <item name="ColorButton1ColorStyle">@color/TcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/TcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/TcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/TcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/TcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/TcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/TcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/TcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/TcolorButton9</item>
+
+        <item name="backgroundTheme">@color/tBackground</item>
+        <item name="textTitleColor">@color/ttitleTextColor</item>
+        <item name="textBodyColor">@color/tnormalTextColor</item>
+    </style>
+
+    <style name="Theme.SmallText.TColor">
+        <item name="ColorButton1ColorStyle">@color/TcolorButton1</item>
+        <item name="ColorButton2ColorStyle">@color/TcolorButton2</item>
+        <item name="ColorButton3ColorStyle">@color/TcolorButton3</item>
+        <item name="ColorButton4ColorStyle">@color/TcolorButton4</item>
+        <item name="ColorButton5ColorStyle">@color/TcolorButton5</item>
+        <item name="ColorButton6ColorStyle">@color/TcolorButton6</item>
+        <item name="ColorButton7ColorStyle">@color/TcolorButton7</item>
+        <item name="ColorButton8ColorStyle">@color/TcolorButton8</item>
+        <item name="ColorButton9ColorStyle">@color/TcolorButton9</item>
+
+        <item name="backgroundTheme">@color/tBackground</item>
+        <item name="textTitleColor">@color/ttitleTextColor</item>
+        <item name="textBodyColor">@color/tnormalTextColor</item>
+    </style>
+
+
+
+</resources>

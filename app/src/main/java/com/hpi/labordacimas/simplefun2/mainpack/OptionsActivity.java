@@ -3,6 +3,9 @@ package com.hpi.labordacimas.simplefun2.mainpack;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -16,6 +19,7 @@ import android.widget.Toast;
 
 import com.hpi.labordacimas.simplefun2.R;
 import com.hpi.labordacimas.simplefun2.changeTheme.Utils;
+import com.hpi.labordacimas.simplefun2.qrpack.QrSelectionActivity;
 
 public class OptionsActivity extends Activity implements View.OnClickListener , AdapterView.OnItemSelectedListener{
 
@@ -27,6 +31,7 @@ public class OptionsActivity extends Activity implements View.OnClickListener , 
     private SeekBar sfx;
     private SeekBar music;
     private ImageButton go_back,save_button;
+    private GestureDetectorCompat gestureDetectorCompat;
 
     private RadioGroup font;
 
@@ -44,6 +49,7 @@ public class OptionsActivity extends Activity implements View.OnClickListener , 
         //sfx = (SeekBar) findViewById(R.id.sfx_seekbar);
         //music = (SeekBar) findViewById(R.id.music_seekbar);
         go_back = (ImageButton) findViewById(R.id.return_button);
+        gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
 
 
 
@@ -151,6 +157,13 @@ public class OptionsActivity extends Activity implements View.OnClickListener , 
         finish();
     }
 
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        this.gestureDetectorCompat.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }
+
+
     private void changeColorTheme(){
         String mode =  daltonic_mode.getSelectedItem().toString();
         if(mode.equalsIgnoreCase(getString(R.string.normal_colors))){
@@ -185,6 +198,30 @@ public class OptionsActivity extends Activity implements View.OnClickListener , 
             default:
         }
 
+    }
+
+    class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+        //handle 'swipe left' action only
+
+        @Override
+        public boolean onFling(MotionEvent event1, MotionEvent event2,
+                               float velocityX, float velocityY) {
+
+         /*
+         Toast.makeText(getBaseContext(),
+          event1.toString() + "\n\n" +event2.toString(),
+          Toast.LENGTH_SHORT).show();
+         */
+
+            if(event2.getX() < event1.getX()){
+                Intent intent2;
+                intent2 = new Intent (getBaseContext(), MainActivity.class);
+                startActivity(intent2);
+                finish();
+            }
+
+            return true;
+        }
     }
 
     @Override

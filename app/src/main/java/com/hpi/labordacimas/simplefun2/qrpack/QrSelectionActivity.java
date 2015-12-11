@@ -3,7 +3,10 @@ package com.hpi.labordacimas.simplefun2.qrpack;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
 import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -12,11 +15,13 @@ import android.widget.Toast;
 import com.hpi.labordacimas.simplefun2.R;
 import com.hpi.labordacimas.simplefun2.changeTheme.Utils;
 import com.hpi.labordacimas.simplefun2.mainpack.IdentificationActivity;
+import com.hpi.labordacimas.simplefun2.mainpack.MainActivity;
 
 public class QrSelectionActivity extends Activity implements View.OnClickListener{
 
     Button qrReadButton, qrGenerateButton;
     ImageButton QRlogInButton;
+    private GestureDetectorCompat gestureDetectorCompat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,8 @@ public class QrSelectionActivity extends Activity implements View.OnClickListene
 
         qrGenerateButton = (Button) findViewById(R.id.button_generateqr);
         qrReadButton = (Button) findViewById(R.id.button_read_qrcode);
+
+        gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
         try {
             QRlogInButton = (ImageButton) findViewById(R.id.qr_log_imageButton);
             Log.d("Checking..." ,QRlogInButton.toString());
@@ -39,6 +46,12 @@ public class QrSelectionActivity extends Activity implements View.OnClickListene
         }
 
 
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        this.gestureDetectorCompat.onTouchEvent(event);
+        return super.onTouchEvent(event);
     }
 
     @Override
@@ -69,6 +82,31 @@ public class QrSelectionActivity extends Activity implements View.OnClickListene
                 startActivity(intent3);
         }
     }
+
+    class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+        //handle 'swipe left' action only
+
+        @Override
+        public boolean onFling(MotionEvent event1, MotionEvent event2,
+                               float velocityX, float velocityY) {
+
+         /*
+         Toast.makeText(getBaseContext(),
+          event1.toString() + "\n\n" +event2.toString(),
+          Toast.LENGTH_SHORT).show();
+         */
+
+            if(event2.getY() > event1.getY()){
+                Intent intent2;
+                intent2 = new Intent (getBaseContext(), MainActivity.class);
+                startActivity(intent2);
+                finish();
+            }
+
+            return true;
+        }
+    }
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();

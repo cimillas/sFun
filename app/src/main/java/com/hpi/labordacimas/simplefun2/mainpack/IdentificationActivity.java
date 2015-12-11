@@ -5,6 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +21,7 @@ public class IdentificationActivity extends Activity implements View.OnClickList
     private EditText username_editText, password_editText;
     private Button  logInButton;
     private ImageButton closeButton;
+    private GestureDetectorCompat gestureDetectorCompat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +35,19 @@ public class IdentificationActivity extends Activity implements View.OnClickList
         closeButton = (ImageButton) findViewById(R.id.closeButton);
         logInButton = (Button) findViewById(R.id.logInButton);
 
+        gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
+
         logInButton.setOnClickListener(this);
         closeButton.setOnClickListener(this);
 
     }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        this.gestureDetectorCompat.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }
+
 
     @Override
     public void onClick(View v) {
@@ -52,6 +65,30 @@ public class IdentificationActivity extends Activity implements View.OnClickList
                 editor.apply();
                 finish();
                 break;
+        }
+    }
+
+    class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+        //handle 'swipe left' action only
+
+        @Override
+        public boolean onFling(MotionEvent event1, MotionEvent event2,
+                               float velocityX, float velocityY) {
+
+         /*
+         Toast.makeText(getBaseContext(),
+          event1.toString() + "\n\n" +event2.toString(),
+          Toast.LENGTH_SHORT).show();
+         */
+
+            if(event2.getY() < event1.getY()){
+                Intent intent2;
+                intent2 = new Intent (getBaseContext(), MainActivity.class);
+                startActivity(intent2);
+                finish();
+            }
+
+            return true;
         }
     }
 

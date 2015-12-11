@@ -11,10 +11,14 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
 import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -32,6 +36,8 @@ public class MainActivity extends Activity implements View.OnClickListener , Goo
     private ImageButton option_button, qrbutton,logInButton;
     private Location userLocation;
     private TextView locationText;
+
+    private GestureDetectorCompat gestureDetectorCompat;
 
     //Accelerometer sensors
     private SensorManager mSensorManager;
@@ -70,6 +76,27 @@ public class MainActivity extends Activity implements View.OnClickListener , Goo
         qrbutton.setOnClickListener(this);
         logInButton.setOnClickListener(this);
         staffbutton.setOnClickListener(this);
+
+      /*  OnSwipeTouchListener onSwipeTouchListener = new OnSwipeTouchListener(this) {
+            @Override
+            public void onSwipeLeft() {
+                Intent intent2;
+                intent2 = new Intent (getBaseContext(), OptionsActivity.class);
+                startActivity(intent2);
+                finish();
+            }
+            @Override
+            public void onSwipeRight(){
+                Intent intent1;
+                intent1 = new Intent(getBaseContext(), Game.class);
+                startActivity(intent1);
+                finish();
+            }
+
+        }; */
+
+        gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
+
         //Getting location of the user
         buildGoogleApiClient();
         mGoogleApiClient.connect();
@@ -87,6 +114,12 @@ public class MainActivity extends Activity implements View.OnClickListener , Goo
             login_intent = new Intent(getBaseContext(), IdentificationActivity.class);
             startActivity(login_intent);
         }
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        this.gestureDetectorCompat.onTouchEvent(event);
+        return super.onTouchEvent(event);
     }
 
     @Override
@@ -233,6 +266,38 @@ public class MainActivity extends Activity implements View.OnClickListener , Goo
         finish();
 
     }
+
+    class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+        //handle 'swipe left' action only
+
+        @Override
+        public boolean onFling(MotionEvent event1, MotionEvent event2,
+                               float velocityX, float velocityY) {
+
+         /*
+         Toast.makeText(getBaseContext(),
+          event1.toString() + "\n\n" +event2.toString(),
+          Toast.LENGTH_SHORT).show();
+         */
+
+            if(event2.getX() > event1.getX()){ //left swiping
+                Intent intent2;
+                intent2 = new Intent (getBaseContext(), OptionsActivity.class);
+                startActivity(intent2);
+                finish();
+            }
+            else {
+                if (event2.getX() < event1.getX()) { //Right swiping
+                    Intent intent1;
+                    intent1 = new Intent(getBaseContext(), StaffActivity.class);
+                    startActivity(intent1);
+                    finish();
+                }
+            }
+            return true;
+        }
+    }
+
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
